@@ -1,0 +1,205 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caja {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top:110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #C78C19;
+    text-decoration: underline;
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 5px 0 10px;
+}
+
+.input-padron:hover{
+    border-color: #C78C19;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+    border-radius: 11px;
+    border: none;
+    border: 3px solid #858585;
+}
+
+textarea{
+    padding: 10px;
+    border-radius: 11px;  
+    border: none;
+    border: 3px solid #858585; 
+    margin-bottom: 5px;
+}
+
+textarea:hover{
+    padding: 10px;
+    border-radius: 11px;  
+    border: none;
+    border: 3px solid  #C78C19
+}
+
+.checkbox{
+    margin: 20px 0px;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border-radius: 11px;
+    border: none;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: rgb(255, 123, 0);
+    transform: scale(1.1);
+}
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+}
+
+@media screen and (max-width:480px){
+
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+
+    .caja{
+        width: auto;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    main{
+        width: auto;
+    }
+
+    label {
+        text-align: center;
+    }
+
+    .principal{
+        text-align: center 
+    }
+
+    .input-padron{
+        display: inline-block;
+        margin: 0;
+        padding: 10px 40px;
+        width: auto;
+        border: none;
+        border: 2px solid #858585;
+        border-radius: 11px;
+        text-align: center;
+    }
+
+    .enviar{
+        width: 75%;
+        padding: 15px 0;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        background: orange;
+        border-radius: 11px;
+        border: none;
+        transition: 0.3s all;
+        cursor: pointer;
+        margin: 2%, 5%, 2%, 50%;
+        text-align: center;
+        display: inline-block;
+    }
+
+    textarea{
+        width: 65%;
+        height: auto;
+        padding: 10px;
+        resize: horizontal;
+        border: 2px solid #858585;
+        border-radius: 11px;
+    }
+
+    .checkbox{
+    margin: 20px 5px;
+    }
+
+    table{
+        margin: 40px auto;
+    }
+    
+}
